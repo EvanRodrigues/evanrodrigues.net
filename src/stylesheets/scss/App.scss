@@ -21,3 +21,13 @@ body {
     min-height: 100%;
     overflow: visible;
 }
+
+.link {
+    color: $highlighted;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: $highlighted;
+}

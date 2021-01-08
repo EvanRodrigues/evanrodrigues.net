@@ -3,7 +3,7 @@ import React from "react";
 export const Job = (props) => {
     return (
         <div className="work-container">
-            <a class="work-link" href="/">
+            <a className="link" href="/">
                 <h4 className="work-title">{props.title}</h4>
             </a>
 
