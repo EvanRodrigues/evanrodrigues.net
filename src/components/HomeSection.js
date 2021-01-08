@@ -12,7 +12,7 @@ export const HomeSection = (props) => {
         <div id={props.id} className="home-section">
             <div className="info-container">
                 <div className="header-container">
-                    <h1>{props.title}</h1>
+                    <h1 className="section-header">{props.title}</h1>
                 </div>
                 {props.children}
             </div>

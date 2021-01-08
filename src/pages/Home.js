@@ -3,6 +3,7 @@ import { HomeSection } from "../components/HomeSection";
 import { Intro } from "../components/Intro";
 import { WorkExperience } from "../components/WorkExperience";
 import { Projects } from "../components/Projects";
+import { MyStory } from "../components/MyStory";
 import "../stylesheets/css/Home.css";
 
 export const Home = () => {
@@ -17,7 +18,9 @@ export const Home = () => {
             <HomeSection id="projects" title="Projects">
                 <Projects />
             </HomeSection>
-            <HomeSection id="myStory" title="My Story"></HomeSection>
+            <HomeSection id="myStory" title="My Story">
+                <MyStory />
+            </HomeSection>
         </div>
     );
 };
