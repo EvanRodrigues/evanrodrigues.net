@@ -1,0 +1,45 @@
+.portfolio-container {
+    height: calc(100% - 5.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entry-container {
+    width: 47.5%;
+}
+
+.work-title {
+    color: #395fb2;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.work-summary {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.work-link {
+    text-decoration: none;
+}
+
+.work-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #395fb2;
+}
+
+.work-container {
+    width: 100%;
+}
+
+.work-date {
+    font-size: 1.35rem;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 7px;
+    align-items: center;
+}
