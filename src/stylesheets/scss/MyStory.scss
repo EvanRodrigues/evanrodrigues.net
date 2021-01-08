@@ -1,0 +1,11 @@
+.story-container {
+    height: calc(100% - 5.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-entry {
+    font-size: 1.35rem;
+    font-weight: bold;
+}

@@ -11,6 +11,8 @@
 # production
 /build
 
+/src/images/unused
+
 # misc
 .eslintcache
 .DS_Store
