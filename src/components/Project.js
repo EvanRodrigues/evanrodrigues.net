@@ -4,7 +4,7 @@ import { ProjectPageLink } from "./ProjectPageLink";
 export const Project = (props) => {
     return (
         <div className="project-info">
-            <a href="/">
+            <a href={props.type === "work" ? "/#portfolio" : "/#projects"}>
                 <div className="close">X</div>
             </a>
             <div className="project-content">
