@@ -12,8 +12,16 @@ export const Intro = () => {
                     I'm a Software Developer who specializes in Web Development.
                 </span>
                 <span className="intro-entry">
-                    Feel free to view my resume, and if you're interested in
-                    contacting me you can send me an email.
+                    Feel free to view{" "}
+                    <a
+                        className="link"
+                        href={`${process.env.PUBLIC_URL}/Evan_Rodrigues_Resume.pdf`}
+                    >
+                        {" "}
+                        my resume
+                    </a>
+                    , and if you're interested in contacting me you can send me
+                    an email.
                 </span>
                 <span className="intro-entry">
                     If you'd like to learn more about me, scroll down to see
