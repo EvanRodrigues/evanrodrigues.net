@@ -2,13 +2,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    min-height: 700px;
+    padding: 15px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.project-title,
+.work-title {
+    color: #395fb2;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.project-summary,
+.work-summary {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .section-header {
     text-decoration: underline;
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -16,14 +33,8 @@
 .info-container {
     background-color: #f6f6f6;
     border: 3px solid #373737;
-    font-size: 20px;
-    width: 70vw;
-    height: 42rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    -moz-box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
-    -webkit-box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
-    box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
+    width: 90vw;
+    padding: 10px;
 }
 
 #intro {
@@ -47,4 +58,31 @@
 
 #blog {
     background: url("/src/images/backgrounds/carbon_fibre_purple.png");
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .home-section {
+        min-height: 100vh;
+    }
+
+    .info-container {
+        font-size: 20px;
+
+        -moz-box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
+        box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }

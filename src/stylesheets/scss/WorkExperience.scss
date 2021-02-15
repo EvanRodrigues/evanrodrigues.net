@@ -5,26 +5,21 @@
     justify-content: space-between;
 }
 
-.work-title {
-    color: #395fb2;
-    font-size: 1.75rem;
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
 .work-summary {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
 .work-container {
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .work-date {
-    font-size: 1.35rem;
+    font-size: 1rem;
     font-weight: normal;
     display: block;
     margin-bottom: 7px;
