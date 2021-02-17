@@ -27,23 +27,24 @@ export const Intro = () => {
                     If you'd like to learn more about me, scroll down to see
                     some of my work!
                 </span>
-            </div>
-            <div className="social-links">
-                <div className="icon-container">
-                    <a href="https://linkedin.com/in/evan-rodrigues/">
-                        <img
-                            className="icon"
-                            alt="linked-in_50.png"
-                            src={linkedin}
-                        />
-                    </a>
-                    <a href="https://github.com/EvanRodrigues">
-                        <img
-                            className="icon"
-                            alt="github_50.png"
-                            src={github}
-                        />
-                    </a>
+
+                <div className="social-links">
+                    <div className="icon-container">
+                        <a href="https://linkedin.com/in/evan-rodrigues/">
+                            <img
+                                className="icon"
+                                alt="linked-in_50.png"
+                                src={linkedin}
+                            />
+                        </a>
+                        <a href="https://github.com/EvanRodrigues">
+                            <img
+                                className="icon"
+                                alt="github_50.png"
+                                src={github}
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
