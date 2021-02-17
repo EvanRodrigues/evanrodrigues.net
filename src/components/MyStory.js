@@ -4,7 +4,7 @@ import "../stylesheets/css/MyStory.css";
 
 export const MyStory = () => {
     return (
-        <div className="story-container">
+        <div className="portfolio-container">
             <StoryEntry content="I went to college at Rutgers University in New Brunswick New Jersey, where I received my bachelor's degree in Computer Science. I chose Computer Science as my major because of my love for video games and technology." />
 
             <StoryEntry content="After college, I spent three years as a Twitch streamer. I no longer pursue streaming full-time, but I enjoy developing tools for streamers as a hobby." />
