@@ -30,6 +30,10 @@
     font-weight: bold;
 }
 
+.header-container {
+    text-align: center;
+}
+
 .section-header {
     text-decoration: underline;
     font-size: 1.6rem;
@@ -70,6 +74,9 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+    .header-container {
+        text-align: left;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
