@@ -3,9 +3,9 @@
     padding-bottom: 15px;
 }
 
-.project-summary {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1.35rem;
-    font-weight: bold;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .project-container {
+        width: 47.5%;
+    }
 }

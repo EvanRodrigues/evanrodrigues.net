@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ProjectHeader } from "./ProjectHeader";
 import { VideoInfo } from "./VideoInfo";
 import { VideoDemo } from "./VideoDemo";
 
 export const Project = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="project-info">
             <a href={props.type === "work" ? "/#portfolio" : "/#projects"}>

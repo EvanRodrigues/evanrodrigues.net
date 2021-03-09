@@ -1,19 +1,4 @@
-.portfolio-container {
-    height: calc(100% - 5.5rem);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.work-summary {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
 .work-container {
-    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -24,4 +9,11 @@
     display: block;
     margin-bottom: 7px;
     align-items: center;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .work-date {
+        font-size: 1.5rem;
+    }
 }

@@ -7,6 +7,13 @@
     min-height: 100vh;
 }
 
+.portfolio-container {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .project-title,
 .work-title {
     color: #395fb2;
@@ -23,6 +30,10 @@
     font-weight: bold;
 }
 
+.header-container {
+    text-align: center;
+}
+
 .section-header {
     text-decoration: underline;
     font-size: 1.6rem;
@@ -34,6 +45,7 @@
     background-color: #f6f6f6;
     border: 3px solid #373737;
     width: 90vw;
+    min-height: 70vh;
     padding: 10px;
 }
 
@@ -62,27 +74,64 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+    .header-container {
+        text-align: left;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-}
+    .section-header {
+        font-size: 2.5rem;
+    }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
     .home-section {
         min-height: 100vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .portfolio-container {
+        min-height: 70vh;
+    }
+
+    .project-title,
+    .work-title {
+        font-size: 1.8rem;
+    }
+
+    .project-summary,
+    .work-summary,
+    .story-entry {
+        font-size: 1.35rem;
     }
 
     .info-container {
-        font-size: 20px;
-
         -moz-box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
         -webkit-box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
         box-shadow: 8px 8px rgba(0, 0, 0, 0.45);
     }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .section-header {
+        font-size: 3rem;
+    }
+
+    .info-container {
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    .project-title,
+    .work-title {
+        font-size: 2rem;
+    }
+
+    .project-summary,
+    .work-summary,
+    .story-entry {
+        font-size: 1.5rem;
+    }
 }

@@ -7,8 +7,10 @@
 }
 
 .intro-entry {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .icon {
@@ -17,6 +19,8 @@
     margin-right: 1.2rem;
     width: 2.25rem;
     height: 2.25rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .social-links {
@@ -27,12 +31,27 @@
     text-align: center;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-}
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    .text {
+        min-height: 70vh;
+    }
+
+    .intro-entry {
+        font-size: 1.8rem;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .social-links {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .icon {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -40,8 +59,8 @@
     .intro-entry {
         font-size: 1.8rem;
     }
-}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+    .text {
+        text-align: left;
+    }
 }
