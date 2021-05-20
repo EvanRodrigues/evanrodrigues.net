@@ -1,0 +1,72 @@
+#contactForm {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contact-text,
+.contact-message {
+    font-size: 1.1rem;
+    font-family: Courier;
+    width: 100%;
+}
+
+.contact-text {
+    padding: 5px;
+}
+
+.contact-message {
+    padding: 5px;
+    min-height: 40vh;
+    resize: vertical;
+}
+
+.submit-button {
+    margin-top: 6px;
+    background-color: #395fb2;
+    color: white;
+    font-family: Courier;
+    font-size: 1.35rem;
+    border: none;
+    width: 100%;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #486fc5;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #contactForm {
+        min-height: calc(70vh - 25px);
+    }
+
+    .contact-text,
+    .contact-label,
+    .contact-message {
+        font-size: 1.5rem;
+    }
+
+    .contact-message {
+        min-height: 30vh;
+    }
+
+    .submit-button {
+        font-size: 1.85rem;
+    }
+}
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     #contactForm {
+//         min-height: calc(70vh - 25px);
+//     }
+// }

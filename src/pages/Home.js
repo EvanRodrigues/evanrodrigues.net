@@ -5,6 +5,7 @@ import { WorkExperience } from "../components/WorkExperience";
 import { Projects } from "../components/Projects";
 import { MyStory } from "../components/MyStory";
 import "../stylesheets/css/Home.css";
+import { Contact } from "../components/Contact";
 
 export const Home = () => {
     return (
@@ -20,6 +21,13 @@ export const Home = () => {
             </HomeSection>
             <HomeSection id="myStory" title="My Story">
                 <MyStory />
+            </HomeSection>
+            <HomeSection
+                id="contact"
+                title="Contact Me"
+                contact="contact-container"
+            >
+                <Contact />
             </HomeSection>
         </div>
     );
