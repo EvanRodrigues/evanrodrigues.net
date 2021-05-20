@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../stylesheets/css/Contact.css";
 
 export const Contact = () => {
-    const [submitted, setSubmitted] = useState(false);
+    // const [submitted, setSubmitted] = useState(false);
     const [name, setName] = useState("");
     const [subject, setSubject] = useState("");
     const [email, setEmail] = useState("");
@@ -23,7 +23,7 @@ export const Contact = () => {
         setMessage(event.target.value);
     };
 
-    const validateForm = () => {};
+    // const validateForm = () => {};
 
     const submitEmail = (event) => {
         event.preventDefault();
