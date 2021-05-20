@@ -10,7 +10,7 @@ export const HomeSection = (props) => {
     }
     return (
         <div id={props.id} className="home-section">
-            <div className="info-container">
+            <div className={`info-container ${props.contact}`}>
                 <div className="header-container">
                     <h1 className="section-header">{props.title}</h1>
                 </div>

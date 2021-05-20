@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import "../stylesheets/css/Contact.css";
 
 export const Contact = () => {
     const [submitted, setSubmitted] = useState(false);
     const [name, setName] = useState("");
+    const [subject, setSubject] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
@@ -10,6 +12,9 @@ export const Contact = () => {
 
     const updateName = (event) => {
         setName(event.target.value);
+    };
+    const updateSubject = (event) => {
+        setSubject(event.target.value);
     };
     const updateEmail = (event) => {
         setEmail(event.target.value);
@@ -26,6 +31,7 @@ export const Contact = () => {
         const data = {
             senderName: name,
             senderEmail: email,
+            subject: subject,
             message: message,
         };
 
@@ -43,9 +49,9 @@ export const Contact = () => {
     };
 
     return (
-        <>
-            <div>
-                <form>
+        <div id="formContainer">
+            <form id="contactForm">
+                <div className="input-container">
                     <label className="contact-label">Name</label>
                     <input
                         className="contact-text"
@@ -53,7 +59,9 @@ export const Contact = () => {
                         name="name"
                         onChange={updateName}
                     ></input>
-                    <br />
+                </div>
+
+                <div className="input-container">
                     <label className="contact-label">Email</label>
                     <input
                         className="contact-text"
@@ -61,19 +69,31 @@ export const Contact = () => {
                         name="email"
                         onChange={updateEmail}
                     ></input>
-                    <br />
+                </div>
+
+                <div className="input-container">
+                    <label className="contact-label">Subject</label>
+                    <input
+                        className="contact-text"
+                        type="text"
+                        name="subject"
+                        onChange={updateSubject}
+                    ></input>
+                </div>
+
+                <div className="input-container bottom">
                     <label className="contact-label">Message</label>
                     <textarea
                         className="contact-message"
                         name="message"
                         onChange={updateMessage}
                     ></textarea>
-                    <br />
+
                     <button className="submit-button" onClick={submitEmail}>
                         Submit
                     </button>
-                </form>
-            </div>
-        </>
+                </div>
+            </form>
+        </div>
     );
 };

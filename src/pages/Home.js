@@ -22,7 +22,11 @@ export const Home = () => {
             <HomeSection id="myStory" title="My Story">
                 <MyStory />
             </HomeSection>
-            <HomeSection id="contact" title="Contact Me">
+            <HomeSection
+                id="contact"
+                title="Contact Me"
+                contact="contact-container"
+            >
                 <Contact />
             </HomeSection>
         </div>

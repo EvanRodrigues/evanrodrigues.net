@@ -6,17 +6,19 @@ const {
 } = process.env;
 
 exports.handler = async function (event, context, callback) {
-    const { message, senderEmail, senderName } = JSON.parse(event.body);
+    const { message, subject, senderEmail, senderName } = JSON.parse(
+        event.body
+    );
     client.setApiKey(SENDGRID_API_KEY);
-
-    console.log(SENDGRID_TO_EMAIL);
-    console.log(SENDGRID_FROM_EMAIL);
 
     const data = {
         to: SENDGRID_TO_EMAIL,
         from: SENDGRID_FROM_EMAIL,
-        subject: `New message from ${senderName} (${senderEmail})`,
-        html: message,
+        subject: `New message from ${senderName} (${senderEmail}) about ${subject}`,
+        html: ` <b>Name:</b> ${senderName} <br/>
+                <b>Email:</b> ${senderEmail} <br/>
+                <b>Subject:</b> ${subject} <br/>
+                <b>Message:</b> ${message}`,
     };
 
     try {
