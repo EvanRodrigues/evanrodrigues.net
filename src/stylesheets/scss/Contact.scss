@@ -5,6 +5,10 @@
     justify-content: space-between;
 }
 
+.error-message {
+    color: red;
+}
+
 .contact-label {
     display: block;
     font-size: 1.1rem;
@@ -43,15 +47,30 @@
     background-color: #486fc5;
 }
 
+.success-container {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.success-message {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #contactForm {
+    #contactForm,
+    .success-container {
         min-height: calc(70vh - 25px);
     }
 
     .contact-text,
     .contact-label,
-    .contact-message {
+    .contact-message,
+    .success-message {
         font-size: 1.5rem;
     }
 

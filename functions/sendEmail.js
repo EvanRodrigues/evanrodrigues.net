@@ -1,9 +1,10 @@
 const client = require("@sendgrid/mail");
-const {
-    SENDGRID_API_KEY,
-    SENDGRID_TO_EMAIL,
-    SENDGRID_FROM_EMAIL,
-} = process.env;
+const { SENDGRID_API_KEY, SENDGRID_TO_EMAIL, SENDGRID_FROM_EMAIL } =
+    process.env;
+
+const replaceLineBreaks = (message) => {
+    return message.replace(/\n/g, "<br/>");
+};
 
 exports.handler = async function (event, context, callback) {
     const { message, subject, senderEmail, senderName } = JSON.parse(
@@ -15,17 +16,18 @@ exports.handler = async function (event, context, callback) {
         to: SENDGRID_TO_EMAIL,
         from: SENDGRID_FROM_EMAIL,
         subject: `New message from ${senderName} (${senderEmail}) about ${subject}`,
-        html: ` <b>Name:</b> ${senderName} <br/>
-                <b>Email:</b> ${senderEmail} <br/>
-                <b>Subject:</b> ${subject} <br/>
-                <b>Message:</b> ${message}`,
+        html: ` <b>Name:</b> ${senderName} <br/> <br/>
+                <b>Email:</b> ${senderEmail} <br/> <br/>
+                <b>Subject:</b> ${subject} <br/> <br/>
+                <b>Message:</b> <br/>
+                ${replaceLineBreaks(message)}`,
     };
 
     try {
         await client.send(data);
         return {
             statusCode: 200,
-            body: "Message sent",
+            body: JSON.stringify({ msg: "Message sent" }),
         };
     } catch (err) {
         return {
