@@ -6,6 +6,7 @@
 }
 
 .error-message {
+    font-size: 0.9rem;
     color: red;
 }
 
@@ -17,22 +18,26 @@
 
 .contact-text,
 .contact-message {
-    font-size: 1.1rem;
     font-family: Courier, serif;
     width: 100%;
 }
 
 .contact-text {
+    font-size: 1.1rem;
     padding: 5px;
 }
 
 .contact-message {
+    vertical-align: top;
+    font-size: 0.9rem;
     padding: 5px;
-    min-height: 40vh;
+    min-height: 15rem;
     resize: vertical;
 }
 
 .submit-button {
+    height: 25px;
+    line-height: 0;
     background-color: #395fb2;
     color: white;
     font-family: Courier, serif;
@@ -68,23 +73,36 @@
 
     .contact-text,
     .contact-label,
-    .contact-message,
+    .error-message,
     .success-message {
         font-size: 1.5rem;
     }
 
+    .error-message,
     .contact-message {
-        min-height: 30vh;
+        font-size: 1.25rem;
+    }
+
+    .contact-message {
+        min-height: 17rem;
     }
 
     .submit-button {
         font-size: 1.85rem;
+        height: 35px;
     }
 }
 
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-//     #contactForm {
-//         min-height: calc(70vh - 25px);
-//     }
-// }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .contact-text,
+    .contact-message,
+    .error-message,
+    .success-message {
+        font-size: 1rem;
+    }
+
+    .contact-label {
+        font-size: 1.25rem;
+    }
+}
