@@ -28,14 +28,8 @@ export const Contact = () => {
         setMessage(event.target.value);
     };
 
-    const isEmpty = (input, field, setError) => {
-        if (input.length === 0) {
-            setError(`Missing ${field} field`);
-            return true;
-        }
-
-        setError("");
-        return false;
+    const isEmpty = (input) => {
+        return input.length === 0;
     };
 
     const validateEmail = () => {
@@ -54,16 +48,25 @@ export const Contact = () => {
     const validateForm = () => {
         let isValid = true;
 
-        if (isEmpty(name, "name", setNameError) === true) isValid = false;
-        if (isEmpty(email, "email", setEmailError) === true) isValid = false;
-        if (isEmpty(subject, "subject", setSubjectError) === true)
+        if (isEmpty(name)) {
+            setNameError("Missing name field");
             isValid = false;
-        if (isEmpty(message, "message", setMessageError) === true)
+        }
+        if (isEmpty(email) === true) {
+            setEmailError("Missing email field");
             isValid = false;
-
+        }
+        if (isEmpty(subject)) {
+            setSubjectError("Missing subject field");
+            isValid = false;
+        }
+        if (isEmpty(message)) {
+            setMessageError("Missing message field");
+            isValid = false;
+        }
         if (validateEmail() === false) isValid = false;
 
-        return isValid ? true : false;
+        return isValid;
     };
 
     const submitEmail = (event) => {
@@ -83,9 +86,9 @@ export const Contact = () => {
             body: JSON.stringify(data),
         })
             .then((response) => response.json())
-            .then((data) => {
+            .then((jsonData) => {
                 setSubmitted(true);
-                console.log("SUCCESS!", data);
+                console.log("SUCCESS!", jsonData);
             })
             .catch((error) => {
                 console.error("Error:", error);
