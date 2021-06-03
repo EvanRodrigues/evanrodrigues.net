@@ -152,7 +152,6 @@ export const Contact = () => {
                         onChange={updateMessage}
                     ></textarea>
                     <span className="error-message">{messageError}</span>
-
                     <button className="submit-button" onClick={submitEmail}>
                         Submit
                     </button>
