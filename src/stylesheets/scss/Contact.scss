@@ -101,9 +101,12 @@
 @media (min-width: 992px) {
     .contact-text,
     .contact-message,
-    .error-message,
-    .success-message {
+    .error-message {
         font-size: 1rem;
+    }
+
+    .success-message {
+        font-size: 1.7rem;
     }
 
     .contact-label {
