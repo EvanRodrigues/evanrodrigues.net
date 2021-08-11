@@ -1,6 +1,4 @@
 import React from "react";
-import github from "../images/icons/github_50.png";
-import linkedin from "../images/icons/linked-in_50.png";
 import "../stylesheets/css/Intro.css";
 
 export const Intro = () => {
@@ -31,18 +29,10 @@ export const Intro = () => {
                 <div className="social-links">
                     <div className="icon-container">
                         <a href="https://linkedin.com/in/evan-rodrigues/">
-                            <img
-                                className="icon"
-                                alt="linked-in_50.png"
-                                src={linkedin}
-                            />
+                            <i className="fab fa-linkedin icon"></i>
                         </a>
                         <a href="https://github.com/EvanRodrigues">
-                            <img
-                                className="icon"
-                                alt="github_50.png"
-                                src={github}
-                            />
+                            <i className="fab fa-github icon"></i>
                         </a>
                     </div>
                 </div>

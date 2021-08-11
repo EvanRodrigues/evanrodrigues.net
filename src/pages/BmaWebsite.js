@@ -8,7 +8,6 @@ export const BmaWebsite = () => {
             <Project
                 title="BMA Website"
                 type="work"
-                description="I converted the previous Blue Moon Analytics site into a serverless SPA using reagent and re-frame. The new features that were added are a pricing tool, blog, and a nav bar for desktop and mobile."
                 video="https://www.youtube.com/embed/1WhMwB_a87g"
                 live="none"
                 github="https://github.com/EvanRodrigues/bma-website"
