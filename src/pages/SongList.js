@@ -8,7 +8,6 @@ export const SongList = () => {
             <Project
                 title="Song List"
                 type="project"
-                description="A site to display a collection of songs in a table. Songs are stored in a MySQL database. Users can order by category (descending or ascending), and can search through the table by title or artist."
                 video="https://www.youtube.com/embed/04Twe1cI_Ig"
                 live="https://ruffianly-inaction.000webhostapp.com/"
                 github="https://github.com/EvanRodrigues/SongList"

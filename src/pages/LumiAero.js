@@ -3,13 +3,12 @@ import { ProjectContainer } from "../components/ProjectContainer";
 import { Project } from "../components/Project";
 
 //Component for both Work Experience and Projects.
-export const LumiAero = () => {
+export const LumiAero = (props) => {
     return (
         <ProjectContainer type="work">
             <Project
                 title="LumiAero"
                 type="work"
-                description="A website to manage aircraft and user information for a Microsoft Excel COM add-in. The COM add-in and the website communicate via an API that I designed. The site is linked to an Azure SQL relational database, and the project was started with ASP.NET Zero."
                 video="https://www.youtube.com/embed/OYncR9FoC-0"
                 live="none"
                 github="none"

@@ -8,7 +8,6 @@ export const StreamTools = () => {
             <Project
                 title="Stream Tools"
                 type="project"
-                description="A platform to distribute my twitch.tv widgets to my friends to use. It's my first full stack personal project and is consistently being updated with new widgets and features."
                 video="https://www.youtube.com/embed/4vyPTh6EWkw"
                 live="https://stream-goal.herokuapp.com/"
                 github="https://github.com/EvanRodrigues/stream-tools"

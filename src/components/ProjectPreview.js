@@ -5,11 +5,17 @@ import "../stylesheets/css/ProjectPage.css";
 export const ProjectPreview = (props) => {
     return (
         <div className="project-container">
-            <Link className="link" to={props.link}>
+            <Link
+                className="link"
+                to={{
+                    pathname: props.link,
+                    state: { description: props.description },
+                }}
+            >
                 <h4 className="project-title">{props.title}</h4>
             </Link>
 
-            <p className="project-summary">{props.summary}</p>
+            <p className="project-description">{props.description}</p>
         </div>
     );
 };

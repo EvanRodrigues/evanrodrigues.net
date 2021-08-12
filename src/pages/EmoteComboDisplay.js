@@ -8,7 +8,6 @@ export const EmoteComboDisplay = () => {
             <Project
                 title="Emote Combo Display"
                 type="project"
-                description="A widget for twitch.tv streamers that displays an emote on OBS and plays a sound if an emote is used enough in the chat room. The emote-combo-display has access to Twitch global, BetterTTV, and FrankerFaceZ emotes."
                 video="https://www.youtube.com/embed/VoaBkD51FXc"
                 live="none"
                 github="https://github.com/EvanRodrigues/emote-combo-display"
