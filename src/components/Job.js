@@ -11,7 +11,7 @@ export const Job = (props) => {
                     state: { description: props.description },
                 }}
             >
-                <h4 className="work-title">{props.title}</h4>
+                <h2 className="work-title">{props.title}</h2>
             </Link>
 
             <span className="work-date">{props.date}</span>

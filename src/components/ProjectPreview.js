@@ -12,7 +12,7 @@ export const ProjectPreview = (props) => {
                     state: { description: props.description },
                 }}
             >
-                <h4 className="project-title">{props.title}</h4>
+                <h2 className="project-title">{props.title}</h2>
             </Link>
 
             <p className="project-description">{props.description}</p>

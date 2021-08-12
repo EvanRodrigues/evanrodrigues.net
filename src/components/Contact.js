@@ -112,43 +112,55 @@ export const Contact = () => {
         <div id="formContainer">
             <form id="contactForm">
                 <div className="input-container">
-                    <label className="contact-label">Name</label>
+                    <label className="contact-label" htmlFor="name">
+                        Name
+                    </label>
                     <input
                         className="contact-text"
                         type="text"
                         name="name"
+                        id="name"
                         onChange={updateName}
                     ></input>
                     <span className="error-message">{nameError}</span>
                 </div>
 
                 <div className="input-container">
-                    <label className="contact-label">Email</label>
+                    <label className="contact-label" htmlFor="email">
+                        Email
+                    </label>
                     <input
                         className="contact-text"
                         type="text"
                         name="email"
+                        id="email"
                         onChange={updateEmail}
                     ></input>
                     <span className="error-message">{emailError}</span>
                 </div>
 
                 <div className="input-container">
-                    <label className="contact-label">Subject</label>
+                    <label className="contact-label" htmlFor="subject">
+                        Subject
+                    </label>
                     <input
                         className="contact-text"
                         type="text"
                         name="subject"
+                        id="subject"
                         onChange={updateSubject}
                     ></input>
                     <span className="error-message">{subjectError}</span>
                 </div>
 
                 <div className="input-container bottom">
-                    <label className="contact-label">Message</label>
+                    <label className="contact-label" htmlFor="message">
+                        Message
+                    </label>
                     <textarea
                         className="contact-message"
                         name="message"
+                        id="message"
                         onChange={updateMessage}
                     ></textarea>
                     <span className="error-message">{messageError}</span>

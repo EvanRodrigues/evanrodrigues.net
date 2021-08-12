@@ -28,10 +28,16 @@ export const Intro = () => {
 
                 <div className="social-links">
                     <div className="icon-container">
-                        <a href="https://linkedin.com/in/evan-rodrigues/">
+                        <a
+                            href="https://linkedin.com/in/evan-rodrigues/"
+                            aria-label="LinkedIn"
+                        >
                             <i className="fab fa-linkedin icon"></i>
                         </a>
-                        <a href="https://github.com/EvanRodrigues">
+                        <a
+                            href="https://github.com/EvanRodrigues"
+                            aria-label="GitHub"
+                        >
                             <i className="fab fa-github icon"></i>
                         </a>
                     </div>
