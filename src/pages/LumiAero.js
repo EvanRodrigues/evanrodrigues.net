@@ -4,8 +4,6 @@ import { Project } from "../components/Project";
 
 //Component for both Work Experience and Projects.
 export const LumiAero = (props) => {
-    console.log(`props.description: ${props.description}`);
-
     return (
         <ProjectContainer type="work">
             <Project
