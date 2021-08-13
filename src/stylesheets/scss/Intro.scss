@@ -1,4 +1,4 @@
-.text {
+.intro-container {
     min-height: calc(100vh - 56px);
     text-align: center;
     display: flex;
@@ -9,8 +9,6 @@
 .intro-entry {
     font-size: 1.35rem;
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .icon {
@@ -18,8 +16,6 @@
     display: inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
     color: #202020;
 }
 
@@ -47,19 +43,12 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .text {
+    .intro-container {
         min-height: 70vh;
     }
 
     .intro-entry {
         font-size: 1.8rem;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    .social-links {
-        margin-top: 25px;
-        margin-bottom: 25px;
     }
 
     .icon {
@@ -73,7 +62,11 @@
         font-size: 1.8rem;
     }
 
-    .text {
+    .intro-container {
         text-align: left;
+    }
+
+    .icon {
+        font-size: 5rem;
     }
 }
