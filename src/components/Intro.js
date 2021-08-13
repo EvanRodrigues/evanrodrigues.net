@@ -4,7 +4,7 @@ import "../stylesheets/css/Intro.css";
 export const Intro = () => {
     return (
         <>
-            <div className="text">
+            <div className="intro-container">
                 <span className="intro-entry">I'm Evan Rodrigues!</span>
                 <span className="intro-entry">
                     I'm a Software Developer who specializes in Web Development.
@@ -18,8 +18,14 @@ export const Intro = () => {
                         {" "}
                         my resume
                     </a>
-                    , and if you're interested in contacting me you can send me
-                    an email.
+                    , and if you're interested in contacting me you can{" "}
+                    <a
+                        className="link"
+                        href={`${process.env.PUBLIC_URL}#contact`}
+                    >
+                        send me a message
+                    </a>{" "}
+                    below.
                 </span>
                 <span className="intro-entry">
                     If you'd like to learn more about me, scroll down to see
